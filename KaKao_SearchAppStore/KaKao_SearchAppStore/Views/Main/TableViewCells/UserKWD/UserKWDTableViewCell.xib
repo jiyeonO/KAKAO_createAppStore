@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserKWDTableViewCell" id="KGk-i7-Jjw" customClass="UserKWDTableViewCell" customModule="KaKao_SearchAppStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0B0-bT-j7U">
+                        <rect key="frame" x="0.0" y="14" width="25" height="22"/>
+                        <color key="tintColor" name="lightGrayOpacity"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="0b9-57-D3D"/>
+                            <constraint firstAttribute="width" secondItem="0B0-bT-j7U" secondAttribute="height" multiplier="1:1" constant="1" id="eUY-xC-edb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REx-J6-eg8">
+                        <rect key="frame" x="25" y="0.0" width="295" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" name="GrayTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="REx-J6-eg8" firstAttribute="leading" secondItem="0B0-bT-j7U" secondAttribute="trailing" id="MVG-3c-SFk"/>
+                    <constraint firstItem="REx-J6-eg8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gVm-rH-shV"/>
+                    <constraint firstAttribute="trailing" secondItem="REx-J6-eg8" secondAttribute="trailing" id="hJw-Kg-iiR"/>
+                    <constraint firstAttribute="bottom" secondItem="REx-J6-eg8" secondAttribute="bottom" id="mdE-Hy-So2"/>
+                    <constraint firstItem="0B0-bT-j7U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nES-2J-xP8"/>
+                    <constraint firstItem="0B0-bT-j7U" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sQB-uI-srH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="0B0-bT-j7U" id="vMQ-FG-tS2"/>
+                <outlet property="imgViewWidth" destination="0b9-57-D3D" id="PoK-BV-3ts"/>
+                <outlet property="searchWordLabel" destination="REx-J6-eg8" id="gtd-eE-FeL"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="117"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <namedColor name="GrayTextColor">
+            <color red="0.4440000057220459" green="0.44499999284744263" blue="0.46000000834465027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGrayOpacity">
+            <color red="0.81999999284744263" green="0.81999999284744263" blue="0.83899998664855957" alpha="0.74500000476837158" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
